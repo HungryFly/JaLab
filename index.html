@@ -1,47 +1,223 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+    <title>Ja Lab at The Scripps Research Institute Florida</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: "Lato", sans-serif
+        }
 
-    <head>
-        <meta charset="UTF-8" />
-        <title>The Ja Lab</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- Add JS & CSS Libraries from cdnjs using Toolbar ( or use any other source/cdn ) -->
-        <!-- Custom assets ( images, sounds, etc ) may be added using Base64 Converter from Toolbar -->
-        <link href="https://fonts.googleapis.com/css?family=Reem+Kufi|Roboto:300" rel="stylesheet">
-    	<link href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" rel="stylesheet">
-    	<link rel="stylesheet" href="css/reset.css">
-    	<link rel="stylesheet" href="css/styles.css">
-    	<link rel="stylesheet" href="css/themes/yellow-black.css">
-    </head>
+        .mySlides {
+            display: none
+        }
+    </style>
 
     <body>
-        <div id="t4_content-a">
-            <h1 style="text-align: center;">Welcome to the The Ja Lab</h1>
-            <p><img style="display: block; margin-left: auto; margin-right: auto;" src="https://raw.githubusercontent.com/HungryFly/JaLab/master/fly_cafe_feeding.jpg" alt="Feeding fly" /></p>
-            <h2><strong>Research Focus</strong></h2>
-            <p>Over a century of research on the fruit fly has resulted in profound discoveries in basic cellular processes, and has enabled the use of <em>Drosophila</em> as a model for human disease and drug discovery.&nbsp; Our laboratory uses diverse
-                tools in chemistry and biology to dissect genetic pathways and neural circuitry involved in aging, behavior, and disease.&nbsp; We are currently involved in several projects including:</p>
-            <h4 style="padding-left: 30px;">1.&nbsp; Interactions of symbiotic microorganisms with&nbsp;<em>Drosophila</em>&nbsp;</h4>
-            <p style="padding-left: 30px;">Fly-associated microbes can promote host longevity and development.&nbsp; Using the powerful genetic tools available for manipulating <em>Drosophila</em>, we are investigating the molecular mechanisms required for maintaining relationships
-                between the fly microbiome, nutrition, and host physiology and health.</p>
-            <h4 style="padding-left: 30px;">2.&nbsp; Aging and nutrition</h4>
-            <p style="padding-left: 30px;">We have identified genes that modify lifespan in response to environmental cues, including temperature and nutrient availability.&nbsp; The mechanistic analysis of these genetic pathways includes application of large-scale methods (metabolomics,
-                lipidomics) and gene expression studies on&nbsp;<em>Drosophila&nbsp;</em>mutants.&nbsp; We are also investigating small molecule-modulators of mitochondrial function in cell culture models of aging.</p>
-            <h4 style="padding-left: 30px;">3.&nbsp;<em> Drosophila</em> feeding behavior</h4>
-            <p style="padding-left: 30px;">The analysis of hunger, satiety, and the timing of meals has been neglected, despite the possible role played by prandial habits in obesity, hypercholesterolemia, and diabetes.&nbsp; We are 1) developing simple tools for measuring short- and
-                long-term food consumption in flies and 2) characterizing genetic and neural manipulations that affect feeding behavior.&nbsp; This work will provide a better understanding of the central mechanisms that underlie appetite and feeding behavior
-                at the genetic and neuronal levels.</p>
-            <h4 style="padding-left: 30px;">4.&nbsp; Interaction between feeding and sleep</h4>
-            <p style="padding-left: 30px;">Eating and sleeping are fundamental behaviors that are critical to survival. Increasing evidence suggests that the processes regulating these behaviors are linked. We have developed the Activity Recording CAFE (ARC) for assessing both food
-                intake and sleep in individually housed adult flies (Murphy et al., <u>Nat. Protoc.</u> 2017). With the ARC, we are dissecting the sleep-feeding axis in <em>Drosophila</em> and have identified mechanisms that regulate postprandial sleep
-                (Murphy et al., <em>eLife</em> 2016).</p>
-            <p style="padding-left: 30px;">The ARC provides a simple, inexpensive, and customizable platform for studying animal behavior using webcams and 3-D printed chambers. For questions on adapting the ARC for your studies, please don&rsquo;t hesitate to contact us or refer to
-                the <a href="FAQ.pdf">FAQ</a>.&nbsp;&nbsp;</p>
+        <!-- Navbar -->
+        <div class="w3-top">
+            <div class="w3-bar w3-black w3-card"><a class="w3-bar-item w3-button w3-padding-large" href="#">HOME</a> <a class="w3-bar-item w3-button w3-padding-large w3-hide-small" href="#band">BAND</a> <a class="w3-bar-item w3-button w3-padding-large w3-hide-small" href="#tour">TOUR</a>                <a class="w3-bar-item w3-button w3-padding-large w3-hide-small" href="#contact">CONTACT</a>
+                <div class="w3-dropdown-hover w3-hide-small"><button class="w3-padding-large w3-button" title="More">MORE </button>
+                    <div class="w3-dropdown-content w3-bar-block w3-card-4"><a class="w3-bar-item w3-button" href="#">FAQ</a> <a class="w3-bar-item w3-button" href="#">Extras</a> <a class="w3-bar-item w3-button" href="#">Media</a></div>
+                </div>
+            </div>
         </div>
-        <div id="t4_sidebar2">
-            <h2 style="text-align: center;"><span style="color: #060076;">___________</span> <br /><br /><strong><a title="Link to Ja Lab Home page" href="index.html">Home</a></strong> <br /><span style="color: #060076;">___________</span><br /><br /><strong><a title="The Ja Team" href="people.html">Lab Members</a></strong><br
-                /><span style="color: #060076;">___________</span><br /><br /><strong><a title="The Ja Lab Publications" href="publications.html">Publications</a></strong><br /><span style="color: #060076;">___________</span><br /><br /><strong><a title="Positions at the Ja Lab" href="positions.html">Positions</a></strong>                <br /><span style="color: #060076;">___________</span><br /><br /><strong><a title="Ja Lab Photos" href="photos.html">Photos</a></strong><br /><span style="color: #060076;">___________</span><br /><br /><strong><a title="Ja Lab Contacts" href="contact.html">Contacts</a></strong><br
-                /><span style="color: #060076;">___________</span></h2>
+        <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+        <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top: 46px;"><a class="w3-bar-item w3-button w3-padding-large" href="#band">BAND</a> <a class="w3-bar-item w3-button w3-padding-large" href="#tour">TOUR</a> <a class="w3-bar-item w3-button w3-padding-large" href="#contact">CONTACT</a> <a class="w3-bar-item w3-button w3-padding-large"
+                href="https://hungryfly.github.io/JaLab/FAQ.html">FAQ</a></div>
+        <!-- Page content -->
+        <div class="w3-content" style="max-width: 2000px; margin-top: 46px;">
+            <!-- The HOME Section -->
+            <div id="HOME" class="w3-container w3-content w3-center w3-padding-64" style="max-width: 800px;">
+                <h2 class="w3-wide">JA LAB</h2>
+                <p class="w3-opacity"><em>Investigating the <strong>ABC</strong>s of Drosophila:<br /></em><em><strong>A</strong>ging, <strong>B</strong>ehavior, and (mi)<strong>C</strong>robes</em></p>
+                <p class="w3-justify">&nbsp;</p>
+                <p class="w3-justify"><strong><span style="color: #333333;"><span style="font-family: Helvetica, Arial, sans-serif; font-size: 14.112px; text-align: left;">Research Focus</span></span></strong></p>
+                <p class="w3-justify"><span style="color: #333333;"><span style="font-family: Helvetica, Arial, sans-serif; font-size: 14.112px; text-align: left;">Over a century of research on the fruit fly has resulted in profound discoveries in basic cellular processes, and has enabled the use of&nbsp;</span>                    <em style="outline: 0px; padding: 0px; margin: 0px; border: 0px; zoom: normal; font-family: Helvetica, Arial, sans-serif; font-size: 14.112px; text-align: left;">Drosophila</em><span style="font-family: Helvetica, Arial, sans-serif; font-size: 14.112px; text-align: left;">&nbsp;as a model for human disease and drug discovery.&nbsp; Our laboratory uses diverse tools in chemistry and biology to dissect genetic pathways and neural circuitry involved in aging, behavior, and disease.&nbsp; We are currently involved in several projects including:</span></span>
+                </p>
+                <p style="outline: 0px; padding-top: 0px; padding-right: 1em; padding-bottom: 0px; margin: 20px 10px 15px 25px; border: 0px; zoom: normal; color: #4d4d4d; font-size: 14.112px; text-align: left; line-height: 1.5em; font-family: Helvetica, Arial, sans-serif;"><strong style="outline: 0px; padding: 0px; margin: 0px; border: 0px; zoom: normal;">1.&nbsp; Interactions of symbiotic microorganisms with&nbsp;<em style="outline: 0px; padding: 0px; margin: 0px; border: 0px; zoom: normal;">Drosophila</em></strong>&nbsp;
+                    Fly-associated microbes can promote host longevity and development.&nbsp; Using the powerful genetic tools available for manipulating&nbsp;<em style="outline: 0px; padding: 0px; margin: 0px; border: 0px; zoom: normal;">Drosophila</em>,
+                    we are investigating the molecular mechanisms required for maintaining relationships between the fly microbiome, nutrition, and host physiology and health.</p>
+                <p style="outline: 0px; padding-top: 0px; padding-right: 1em; padding-bottom: 0px; margin: 20px 10px 15px 25px; border: 0px; zoom: normal; color: #4d4d4d; font-size: 14.112px; text-align: left; line-height: 1.5em; font-family: Helvetica, Arial, sans-serif;"><strong style="outline: 0px; padding: 0px; margin: 0px; border: 0px; zoom: normal;">2.&nbsp; Aging and nutrition&nbsp;</strong>We have identified genes that modify lifespan in response to environmental cues, including temperature and nutrient
+                    availability.&nbsp; The mechanistic analysis of these genetic pathways includes application of large-scale methods (metabolomics, lipidomics) and gene expression studies on&nbsp;<em style="outline: 0px; padding: 0px; margin: 0px; border: 0px; zoom: normal;">Drosophila&nbsp;</em>mutants.&nbsp;
+                    We are also investigating small molecule-modulators of mitochondrial function in cell culture models of aging.</p>
+                <p style="outline: 0px; padding-top: 0px; padding-right: 1em; padding-bottom: 0px; margin: 20px 10px 15px 25px; border: 0px; zoom: normal; color: #4d4d4d; font-size: 14.112px; text-align: left; line-height: 1.5em; font-family: Helvetica, Arial, sans-serif;"><strong style="outline: 0px; padding: 0px; margin: 0px; border: 0px; zoom: normal;">3.&nbsp;<em style="outline: 0px; padding: 0px; margin: 0px; border: 0px; zoom: normal;">&nbsp;Drosophila</em></strong><strong style="outline: 0px; padding: 0px; margin: 0px; border: 0px; zoom: normal;">&nbsp;feeding behavior</strong>&nbsp;The
+                    analysis of hunger, satiety, and the timing of meals has been neglected, despite the possible role played by prandial habits in obesity, hypercholesterolemia, and diabetes.&nbsp; We are 1) developing simple tools for measuring short-
+                    and long-term food consumption in flies and 2) characterizing genetic and neural manipulations that affect feeding behavior.&nbsp; This work will provide a better understanding of the central mechanisms that underlie appetite and feeding
+                    behavior at the genetic and neuronal levels.</p>
+                <p style="outline: 0px; padding-top: 0px; padding-right: 1em; padding-bottom: 0px; margin: 20px 10px 15px 25px; border: 0px; zoom: normal; color: #4d4d4d; font-size: 14.112px; text-align: left; line-height: 1.5em; font-family: Helvetica, Arial, sans-serif;"><strong style="outline: 0px; padding: 0px; margin: 0px; border: 0px; zoom: normal;">4.&nbsp; Interaction between feeding and sleep</strong></p>
+                <p style="outline: 0px; padding-top: 0px; padding-right: 1em; padding-bottom: 0px; margin: 20px 10px 15px 25px; border: 0px; zoom: normal; color: #4d4d4d; font-size: 14.112px; text-align: left; line-height: 1.5em; font-family: Helvetica, Arial, sans-serif;">Eating and sleeping are fundamental behaviors that are critical to survival. Increasing evidence suggests that the processes regulating these behaviors are linked. We have developed the Activity Recording CAFE (ARC) for assessing both
+                    food intake and sleep in individually housed adult flies (<a title="Mutphy et al. Nat. Protoc. 2017" href="https://github.com/HungryFly/flyARC/raw/master/2017%20murphy%20et%20al%20nat%20prot.pdf">Murphy <em>et al</em>. (2017)&nbsp;<em>Nat. Protoc.</em></a>).
+                    With the ARC, we are dissecting the sleep-feeding axis in&nbsp;<em style="outline: 0px; padding: 0px; margin: 0px; border: 0px; zoom: normal;">Drosophila</em>&nbsp;and have identified mechanisms that regulate postprandial sleep (
+                    <a
+                        title="Murphy et al eLife 2016" href="https://github.com/HungryFly/flyARC/raw/master/publications/2016%20murphy%20et%20al%20eLife.pdf">Murphy <em>et al.</em> (2016)&nbsp;<em style="outline: 0px; padding: 0px; margin: 0px; border: 0px; zoom: normal;">eLife</em></a>).</p>
+                <p class="w3-justify">&nbsp;</p>
+                <p style="outline: 0px; padding-top: 0px; padding-right: 1em; padding-bottom: 0px; margin: 20px 10px 15px 25px; border: 0px; zoom: normal; color: #4d4d4d; font-size: 14.112px; text-align: left; line-height: 1.5em; font-family: Helvetica, Arial, sans-serif;">The ARC provides a simple, inexpensive, and customizable platform for studying animal behavior using webcams and 3-D printed chambers. For questions on adapting the ARC for your studies, please don&rsquo;t hesitate to contact us or refer
+                    to the&nbsp;<a style="outline: 0px; padding: 0px; margin: 0px; border: 0px; zoom: normal; text-decoration-line: none; color: #0494bd;" href="https://www.scripps.edu/ja/FAQ.pdf">FAQ</a>.&nbsp;&nbsp;</p>
+            </div>
+            <!-- The MEMBERS Section -->
+            <div id="MEMBERS" class="w3-black">
+                <div class="w3-container w3-content w3-padding-64" style="max-width: 800px;">
+                    <h2 class="w3-wide w3-center">LAB MEMBERS</h2>
+                    <p class="w3-opacity w3-center"><em>The Ja Lab Team</em></p>
+                    <br />
+                    <p class="w2-opacity w2-left"><span style="font-size: 14pt;"><em>Current members</em></span></p>
+                    <table style="border-collapse: collapse; width: 100%; font-family: Helvetica, Arial, sans-serif; height: 276px;" border="0">
+                        <tbody>
+                            <tr style="height: 276px;">
+                                <td style="width: 30%; height: 276px;"><img class="w3-round w3-margin-bottom" style="width: 100%;" src="https://github.com/HungryFly/JaLab/raw/master/people/williamja.jpg" alt="William Ja" /></td>
+                                <td style="width: 70%; height: 276px;">
+                                    <p style="padding-left: 30px;"><strong style="margin: 0px; font-size: 14px;">William Ja<br /></strong><em>Associate Professor<br /><br /></em><strong>Education</strong>:<br />B.S., Chemistry, University of California, Berkeley, 1998<br />Ph.D., Chemistry,
+                                        California Institute of Technology, 2004<br />Postdoc, Biology, California Institute of Technology, 2005-2009</p>
+                                    <p style="padding-left: 30px;"><a href="http://www.scripps.edu/research/faculty/ja">Faculty Page</a></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 30%;">&nbsp;</td>
+                                <td style="width: 70%;">
+                                    <p style="padding-left: 30px;"><strong style="margin: 0px; font-size: 14px;">&nbsp;</strong></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 30%;">&nbsp;</td>
+                                <td style="width: 70%;">
+                                    <p style="padding-left: 30px;"><strong style="margin: 0px; font-size: 14px;">&nbsp;</strong></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 30%;">&nbsp;</td>
+                                <td style="width: 70%;">
+                                    <p style="padding-left: 30px;"><strong style="margin: 0px; font-size: 14px;">&nbsp;</strong></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 30%;">&nbsp;</td>
+                                <td style="width: 70%;">
+                                    <p style="padding-left: 30px;"><strong style="margin: 0px; font-size: 14px;">&nbsp;</strong></p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="w2-opacity w2-left">&nbsp;</p>
+                    <div class="w3-row w3-padding-32">
+                        <div class="w3-third">
+                            <p>Name</p>
+                            <img class="w3-round w3-margin-bottom" style="width: 60%;" src="/w3images/bandmember.jpg" alt="Random Name" /></div>
+                        <div class="w3-third">
+                            <p>Name</p>
+                            <img class="w3-round" style="width: 60%;" src="/w3images/bandmember.jpg" alt="Random Name" /></div>
+                    </div>
+                    <ul class="w3-ul w3-border w3-white w3-text-grey">
+                        <li class="w3-padding">September <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
+                        <li class="w3-padding">October <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
+                        <li class="w3-padding">November <span class="w3-badge w3-right w3-margin-right">3</span></li>
+                    </ul>
+                    <div class="w3-row-padding w3-padding-32" style="margin: 0 -16px;">
+                        <div class="w3-third w3-margin-bottom"><img class="w3-hover-opacity" style="width: 100%;" src="/w3images/newyork.jpg" alt="New York" />
+                            <div class="w3-container w3-white">
+                                <p><strong>New York</strong></p>
+                                <p class="w3-opacity">Fri 27 Nov 2016</p>
+                                <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <button class="w3-button w3-black w3-margin-bottom">Buy Tickets</button></div>
+                        </div>
+                        <div class="w3-third w3-margin-bottom"><img class="w3-hover-opacity" style="width: 100%;" src="/w3images/paris.jpg" alt="Paris" />
+                            <div class="w3-container w3-white">
+                                <p><strong>Paris</strong></p>
+                                <p class="w3-opacity">Sat 28 Nov 2016</p>
+                                <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <button class="w3-button w3-black w3-margin-bottom">Buy Tickets</button></div>
+                        </div>
+                        <div class="w3-third w3-margin-bottom"><img class="w3-hover-opacity" style="width: 100%;" src="/w3images/sanfran.jpg" alt="San Francisco" />
+                            <div class="w3-container w3-white">
+                                <p><strong>San Francisco</strong></p>
+                                <p class="w3-opacity">Sun 29 Nov 2016</p>
+                                <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <button class="w3-button w3-black w3-margin-bottom">Buy Tickets</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Ticket Modal -->
+            <div id="ticketModal" class="w3-modal">
+                <div class="w3-modal-content w3-animate-top w3-card-4">
+                    <header class="w3-container w3-teal w3-center w3-padding-32"><span class="w3-button w3-teal w3-xlarge w3-display-topright">&times;</span>
+                        <h2 class="w3-wide">Tickets</h2>
+                    </header>
+                    <div class="w3-container">
+                        <p><label> Tickets, $15 per person</label></p>
+                        <input class="w3-input w3-border" type="text" placeholder="How many?" />
+                        <p><label> Send To</label></p>
+                        <input class="w3-input w3-border" type="text" placeholder="Enter email" /> <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">PAY </button> <button class="w3-button w3-red w3-section">Close </button>
+                        <p class="w3-right">Need <a class="w3-text-blue" href="#">help?</a></p>
+                    </div>
+                </div>
+            </div>
+            <!-- The Contact Section -->
+            <div id="contact" class="w3-container w3-content w3-padding-64" style="max-width: 800px;">
+                <h2 class="w3-wide w3-center">CONTACT</h2>
+                <p class="w3-opacity w3-center"><em>Fan? Drop a note!</em></p>
+                <div class="w3-row w3-padding-32">
+                    <div class="w3-col m6 w3-large w3-margin-bottom">Chicago, US<br />Phone: +00 151515<br />Email: mail@mail.com</div>
+                    <div class="w3-col m6">
+                        <form action="/action_page.php" target="_blank">
+                            <div class="w3-row-padding" style="margin: 0 -16px 8px -16px;">
+                                <div class="w3-half"><input class="w3-input w3-border" name="Name" required="" type="text" placeholder="Name" /></div>
+                                <div class="w3-half"><input class="w3-input w3-border" name="Email" required="" type="text" placeholder="Email" /></div>
+                            </div>
+                            <input class="w3-input w3-border" name="Message" required="" type="text" placeholder="Message" /> <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button></form>
+                    </div>
+                </div>
+            </div>
+            <!-- End Page Content -->
         </div>
+        <!-- Image of location/map -->
+        <p><img class="w3-image w3-greyscale-min" style="width: 100%;" src="/w3images/map.jpg" /></p>
+        <!-- Footer -->
+        <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+            <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+        </footer>
+        <p>
+            <script>
+                // Automatic Slideshow - change image every 4 seconds
+                var myIndex = 0;
+                carousel();
+
+                function carousel() {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    myIndex++;
+                    if (myIndex > x.length) {
+                        myIndex = 1
+                    }
+                    x[myIndex - 1].style.display = "block";
+                    setTimeout(carousel, 4000);
+                }
+
+                // Used to toggle the menu on small screens when clicking on the menu button
+                function myFunction() {
+                    var x = document.getElementById("navDemo");
+                    if (x.className.indexOf("w3-show") == -1) {
+                        x.className += " w3-show";
+                    } else {
+                        x.className = x.className.replace(" w3-show", "");
+                    }
+                }
+
+                // When the user clicks anywhere outside of the modal, close it
+                var modal = document.getElementById('ticketModal');
+                window.onclick = function(event) {
+                    if (event.target == modal) {
+                        modal.style.display = "none";
+                    }
+                }
+            </script>
+        </p>
     </body>
+
 </html>
