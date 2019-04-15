@@ -11,6 +11,7 @@
             font-family: "Lato", sans-serif
         }
     </style>
+    </head>
 
     <body>
         <!-- Navbar -->
@@ -28,123 +29,13 @@
         <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top: 46px;"><a class="w3-bar-item w3-button w3-padding-large" href="https://hungryfly.github.io/JaLab/#HOME">RESEARCH</a> <a class="w3-bar-item w3-button w3-padding-large" href="https://hungryfly.github.io/JaLab/#MEMBERS">MEMBERS</a> <a class="w3-bar-item w3-button w3-padding-large"
                 href="https://hungryfly.github.io/JaLab/#CONTACT">CONTACT</a> <a class="w3-bar-item w3-button w3-padding-large" href="https://hungryfly.github.io/JaLab/publications.html">PUBLICATIONS</a> <a class="w3-bar-item w3-button w3-padding-large" href="https://hungryfly.github.io/JaLab/FAQ.html">ARC FAQ</a>            <a class="w3-bar-item w3-button w3-padding-large" href="https://hungryfly.github.io/JaLab/#POSITIONS">POSITIONS</a> <a class="w3-bar-item w3-button w3-padding-large" href="https://github.com/HungryFly/flyARC">flyARC GitHub</a></div>
                 <!-- Page content -->
-        <div class="w3-content" style="max-width: 1000px; margin-top: 46px;">
-            <!-- The FAQ Section -->
-            <div id="HEAD" class="w3-container w3-content w3-center w3-padding-32" style="max-width: 1000px;">
-                <h1 class="w3-wide">FAQ for the Activity Recording CAFE (ARC)</h1>
-                <p class="w3-opacity" style="margin-top: 32px;">For details on the protocol, please refer to our paper on using the ARC (<a title="Mutphy et al. Nat. Protoc. 2017" href="https://github.com/HungryFly/flyARC/raw/master/2017%20murphy%20et%20al%20nat%20prot.pdf">Murphy <em>et al</em>. (2017) <em>Nat. Protoc.</em></a>).</p>
-            </div>
-            <div id="MAIN" class="w3-container" style="max-width: 1000px;">
-                <div id="INTRO" class="w3-padding-32">
-                    <p>Below, please find answers to the questions that we've received thus far.</p>
-                    <h5>Topics</h5>
-                    <ul>
-                        <li><a href="#SOFTWARE_SETUP">Setting up the software</a></li>
-                        <li><a href="#ARC_SETUP">Setting up the ARC</a></li>
-                        <li><a href="#ARC_RUNNING">Running the ARC</a></li>
-                        <li><a href="#ANALYSIS">Data analysis</a></li>
-                    </ul>
-                </div>
-                <div id="SOFTWARE_SETUP" class="w3-container w3-row w3-padding-32">
-                    <h3 class="w3-content">Setting up the software</h3>
-                    <div class="w3-content">
-                        <h6>Q. Do we need a mac to run JavaGrinders?</h6>
-                        <p style="color: #4d4d4d; padding-left: 20px;">A. You can run JavaGrinders on Linux installed on a Windows PC. There are instructions for installation on Linux systems on the JavaGrinders <a href="http://javagrinders-arc.blogspot.com/">blog</a>.</p>
-                        <h6>Q. Yesterday I set "Prevent computer from sleeping automatically when the display is off" and the computer crashed at night. What kind of setting do you use? I'm worried that the computer went to sleep and I would miss some recordings.</h6>
-                        <p style="color: #4d4d4d; padding-left: 20px;">A. You are correct in that the energy saver function should be turned off.</p>
-                        <h6>Q. Are the JavaGrinders and Noah codes updated regularly?</h6>
-                        <p style="color: #4d4d4d; padding-left: 20px;">A. Yes. Latest versions of JavaGrinders can be found on the JavaGrinders&nbsp;<a href="http://javagrinders-arc.blogspot.com/">blog</a> and Noah can be found on our GitHub&nbsp;<a href="https://github.com/HungryFly/flyARC">repository</a>.</p>
-                        <h6>Q. Why is the analysis code called Noah? Why didn't you guys call it like keithiscoolerthanyou.py?</h6>
-                        <p style="color: #4d4d4d; padding-left: 20px;">A. Noah and the ARC... Keith must have been in a biblical mood.</p>
-                    </div>
-                </div>
-                <br />
-                <div id="ARC_SETUP" class="w3-container w3-row w3-padding-32">
-                    <h3>Setting up the ARC</h3>
-                    <div class="w3-content">
-                        <h6>Q. What (model of printer) did you use for printing the chambers for ARC?</h6>
-                        <p style="color: #4d4d4d; padding-left: 20px;">A. We have used a number of different 3D printers over the years for printing the ARC parts, but have recently been using the Rostock Max V2 with HE280 hotend. Any printer that can print an unwarped PLA or ABS chamber will do just
-                            fine. You can also use online printing services which will print the parts well at a low cost.</p>
-                        <h6>Q. How much tolerance for error is there when 3D printing an ARC?</h6>
-                        <p style="color: #4d4d4d; padding-left: 20px;">A. It's hard to put an exact value on this, since it depends on the materials used. I would say it only needs to minimize error enough to allow the parts to fit together. If they don't, you can always sand them down.</p>
-                        <h6>Q. What was the failure rate for ABS, and were there certain conditions where ABS just didn't work? Is PLA just always better?</h6>
-                        <p style="color: #4d4d4d; padding-left: 20px;">A. There's no consensus on which material is better for ARC experiments, although they certainly have different hardness and possibly surface texture. We would recommend PLA because of the limited warping compared with ABS printing.</p>
-                        <h6>Q. The $#@&amp;%*! gate is flimsy and breaks easily. Help!</h6>
-                        <p style="color: #4d4d4d; padding-left: 20px;">A. We are currently printing the thin gates with NinjaTek's <a title="NinjaTek Cheetah" href="https://ninjatek.com/cheetah/">Cheetah</a> flexible 3D printing filament. It's awesome. The old gates used to break periodically, especially
-                            while washing them. The flexible gates are bendable, like rubber, but hardy enough to still be used as a solid gate. We are still in the process of developing another improved gate that won't require the individual pipette
-                            tips to be inserted. Stay tuned!</p>
-                        <h6>Q. I noticed that the capillary we ordered has a black band in the middle position of the capillary. Would this affect the tracking? Should my liquid surface be higher than this? In the protocol it says 2/3 of the capillary, so
-                            at some point the surface will pass the black line?</h6>
-                        <p style="color: #4d4d4d; padding-left: 20px;">A. If you're using the capillaries with the black bands, make sure the top of the dye oil is sufficiently (~5 mm) separated from (and below) the black bands. And when setting up JavaGrinders tracking region, ensure that none of
-                            the bands on the capillaries are captured in the region of interest.</p>
-                        <p style="color: #4d4d4d; padding-left: 20px;">Alternatively, you can remove the black bands from the capillaries. We find that with a little bit of acetone and some scrubbing action, the bands can be removed easily. This also allows you to fill the capillaries up higher, reducing
-                            the frequency of needed capillary changes. Be aware that some low viscosity diets may drip if the capillaries are overfilled too much.</p>
-                        <h6>Q. If I want to video record for at least a day and a night, what kind of liquid food concentration do you recommend?</h6>
-                        <p style="color: #4d4d4d; padding-left: 20px;">A. For our Canton-S males, 5% sucrose or 2.5% yeast extract + 2.5% sucrose is sufficient for 24 hours. For Canton-S females or Dahomey, we usually need 5% yeast extract + 5% sucrose to reliably last 24 hours. Filling the capillaries
-                            up higher (and removing any external markings on the capillaries) also greatly extends possible recording time. See the previous question for more details.</p>
-                    </div>
-                </div>
-                <br />
-                <div id="ARC_RUNNING" class="w3-container w3-row w3-padding-32">
-                    <h3>Running the ARC</h3>
-                    <div class="w3-content">
-                        <h6>Q. Help! I just made a new chamber and all my flies died overnight.</h6>
-                        <p style="color: #4d4d4d; padding-left: 20px;">A. It is critical that once you chloroform the Plexiglas onto the chamber, you wash the chamber thoroughly and get rid of all remaining chloroform!</p>
-                        <h6>Q. Is it possible to reuse the capillaries?</h6>
-                        <p style="color: #4d4d4d; padding-left: 20px;">A. We do wash and reuse the capillaries. The following steps work well for us:</p>
-                        <ol style="color: #4d4d4d;">
-                            <li>Flush the capillaries with distilled water until there's no liquid food or mineral oil left in the capillaries.</li>
-                            <li>Submerge the capillaries in a beaker filled with distilled water, bring the beaker to a boil, and let them boil for about 10 minutes. This helps circulate water through the capillaries.</li>
-                            <li>Use a vacuum system to drain the capillaries of liquid. I'd manually check the first few times to make sure there's no oil droplets remaining in the capillaries before stowing them away.</li>
-                        </ol>
-                        <p style="color: #4d4d4d; padding-left: 20px;">Depending on the liquid food used, a 10-20 minute soak in 70% ethanol or acetone after step #1 or repeating step #2 with fresh distilled water can help.</p>
-                        <p style="color: #4d4d4d; padding-left: 20px;">We have been able to use capillaries indefinitely using these procedures.</p>
-                        <h6>Q. Isn't it a concern that liquid food evaporates from capillaries, which would change the concentration of the food?</h6>
-                        <p style="color: #4d4d4d; padding-left: 20px;">A. Our colorimetric evaporation analysis shows that on standard diets such as 5% sucrose or 5% sucrose + 5% yeast extract, flies feed frequently enough that the concentration of food does not substantially change.</p>
-                        <h6>Q. I am trying to optimize the video to start the recording. If I hit "Show", I got all the dye band successfully tracked. But for animals, only the moving ones are showing red dots. Is this correct? (I did try to set all the parameters
-                            as the protocol listed) Or I should get all the animals red before I start the analyze button?</h6>
-                        <p style="color: #4d4d4d; padding-left: 20px;">A. Yup. We just use the Noah analysis software to retrospectively fill in the coordinates. Basically, the initial frame when you started up the software acts as a reference background. ARCController subtracts the reference background
-                            from the current frame and looks for the fly. So if the fly has not moved from the original position, ARCController won't be able to see it. But this is okay because even a slight movement/twitch will make the fly "visible";
-                            to the ARCController&mdash;even if it doesn't actually move&mdash;and when you run the data file in Noah, it deduces the missed initial reads from the first actual read.</p>
-                    </div>
-                </div>
-                <br />
-                <div id="ANALYSIS" class="w3-container w3-row w3-padding-32">
-                    <h3>Data analysis</h3>
-                    <div class="w3-content">
-                        <h6>Q. Is there a short tutorial on how to use the Noah analysis code?</h6>
-                        <p style="color: #4d4d4d; padding-left: 20px;">A. Yes, please find it&nbsp;<a title="ARC analysis tutorial" href="https://docs.google.com/document/d/1WWrQdbVaBJ042ffpcHR6VVpiwsREIxoWsLO5y5qmgyk/edit">here</a> as a Google Doc. Feel free to comment on the document, since we will
-                            be updating the file periodically.</p>
-                        <h6>Q. Is there a way to trim data? So let's say we want to start data collection at lights-on at 9 am, and we start collection at 8:30 am. How can we trim the first 30 minutes of data? Is that something we have to do to the raw data
-                            before Noah? Or something we can do in Noah? Or what about when we switch out tubes and have to restart data collection so we are missing 15 min of data in the switch?</h6>
-                        <p style="color: #4d4d4d; padding-left: 20px;">A. We don't have a function written for trimming data yet, but could include it in future Noah versions. You should also feel free to customize Noah to your needs. Alternatively, you could manually delete the 1800 rows of data
-                            from the raw file. Or if you are binning activity, feeding, etc. you could use 30 minute bins and discard the first bin. When there's 15 min missing, we just analyze those files separately and later combine them in Excel or
-                            your favorite analysis software.</p>
-                        <h6>Q. How do I go about adjusting the Mealpull_SD and final_SD variables?</h6>
-                        <p style="color: #4d4d4d; padding-left: 20px;">A. You should adjust them based on how noisy or clean your data is. To do so, open Noah in your favorite text editor (I personally like Sublime Text) and look for the following line:</p>
-                        <p style="color: #4d4d4d; padding-left: 20px;"><span style="font-family: 'courier new', courier, monospace;">feedData.append(dataVector)</span></p>
-                        <p style="color: #4d4d4d; padding-left: 20px;">After <span style="font-family: 'courier new', courier, monospace;">feedData.append(dataVector)</span>, in a new line, write</p>
-                        <p style="color: #4d4d4d; padding-left: 20px;"><span style="font-family: 'courier new', courier, monospace;">toExcelNamed(feedData,&ldquo;cleanedFeedTrack&rdquo;)</span></p>
-                        <p style="color: #4d4d4d; padding-left: 20px;">(Make sure that the indentation matches that of <span style="font-family: 'courier new', courier, monospace;">print(&ldquo;&rdquo;)</span>)</p>
-                        <p style="color: #4d4d4d; padding-left: 20px;">In the file &ldquo;cleanedFeedTrack.csv&rdquo;, each row will be a fly and each column represents the dye position at a time point. <br />And you can look at the food tracking data by selecting each row and inserting a line graph,
-                            like this:</p>
-                        <img src="https://github.com/HungryFly/JaLab/raw/master/cleanedFeedTrack_screenshot.jpg" alt="cleanedFeedTrack_screenshot" width="100%" />
-                        <p style="color: #4d4d4d; padding-left: 20px;">In this case, you&rsquo;d be looking at feeding data from fly #4. Now, insert a line chart:</p>
-                        <img src="https://github.com/HungryFly/JaLab/raw/master/insert_linechart.jpg" alt="insert_linechart" max-width="30%" />
-                        <p style="color: #4d4d4d; padding-left: 20px;">And you&rsquo;ll get a chart that looks something like this:</p>
-                        <img src="https://github.com/HungryFly/JaLab/raw/master/sample_linechart.gif" alt="sample_linechartt" max-width="50%" />
-                        <p style="color: #4d4d4d; padding-left: 20px;">Here, each bump up would be considered a feeding event and the gradual slope evaporation. I would count about 9 feeding events, when I inspect it visually.</p>
-                        <p style="color: #4d4d4d; padding-left: 20px;">Now, if your output file from the stats_( ) file (output from option 3: Analyze/Synthesize Data) counts a similar number as when you inspected it visually (which also depends on whether or not you decided to combine feeding bouts
-                            for a meal&hellip;), then your <span style="font-family: 'courier new', courier, monospace;">MEALPULL_SD</span> and <span style="font-family: 'courier new', courier, monospace;">FINAL_SD</span> values are probably good. If
-                            it counts far fewer meals, it probably means that the set SD value makes it not sensitive enough to detect a feeding bout, so you&rsquo;d want to decrease the values. If it counts far more of meals, it probably means that the
-                            set SD value is counting noise in the feeding data as feeding bouts, so you'd want to increase the values.</p>
-                        <p style="color: #4d4d4d; padding-left: 20px;">As you can imagine, the SD values would differ based on the setup, and you&rsquo;d want to play around with the values until you find an appropriate cutoff for your setup.</p>
-                    </div>
-                </div>
-            </div>
+        <div class="w3-content" style="max-width: 2000px; margin-top: 46px;">        
+                <!-- The PUBLICATIONS Section -->
+        <div id="PUBLICATIONS" class="w3-center w3-container w3-content">
+            <h2 class="w3-wide w3-center">PUBLICATIONS</h2>
+            <br/>
+                <iframe src="https://www.ncbi.nlm.nih.gov/pubmed/?term=ja+ww" style="width:100%; height:500px"></iframe>
         </div>
-        
-        
         <p>
             <script>
                 // Used to toggle the menu on small screens when clicking on the menu button
@@ -158,6 +49,7 @@
                 }
             </script>
         </p>
+    </div>
     </body>
 
 </html>
