@@ -22,13 +22,12 @@
                 <div class="w3-dropdown-hover w3-hide-small"><button class="w3-padding-large w3-button" title="More">MORE</button>
                     <div class="w3-dropdown-content w3-bar-block w3-card-4"><a class="w3-bar-item w3-button" href="https://hungryfly.github.io/JaLab/FAQ.html">ARC FAQ</a> <a class="w3-bar-item w3-button" href="https://hungryfly.github.io/JaLab/#POSITIONS">POSITIONS</a> <a class="w3-bar-item w3-button" href="https://github.com/HungryFly/flyARC">flyARC GitHub</a></div>
                 </div>
-            </div>
         </div>
         <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
         <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top " onclick="myFunction()" style="margin-top: 46px;"><a class="w3-bar-item w3-button w3-padding-large" href="https://hungryfly.github.io/JaLab/#HOME" onclick="myFunction()">RESEARCH</a> <a class="w3-bar-item w3-button w3-padding-large" href="https://hungryfly.github.io/JaLab/#MEMBERS" onclick="myFunction()">MEMBERS</a> <a class="w3-bar-item w3-button w3-padding-large"
                 href="https://hungryfly.github.io/JaLab/#CONTACT" onclick="myFunction()">CONTACT</a> <a class="w3-bar-item w3-button w3-padding-large" href="https://hungryfly.github.io/JaLab/publications.html" onclick="myFunction()">PUBLICATIONS</a> <a class="w3-bar-item w3-button w3-padding-large" href="https://hungryfly.github.io/JaLab/FAQ.html" onclick="myFunction()">ARC FAQ</a>            <a class="w3-bar-item w3-button w3-padding-large" href="https://hungryfly.github.io/JaLab/#POSITIONS" onclick="myFunction()">POSITIONS</a> <a class="w3-bar-item w3-button w3-padding-large" href="https://github.com/HungryFly/flyARC" onclick="myFunction()">flyARC GitHub</a></div>
         <!-- Page content -->
-        <div class="w3-content" style="max-width: 1000px; margin-top: 46px;">
+        <div class="w3-content" style="max-width: 1000px; margin-top: 46px;" onclick="myFunction2()">
             <!-- The FAQ Section -->
             <div id="HEAD" class="w3-container w3-content w3-center w3-padding-32" style="max-width: 1000px;">
                 <h1 class="w3-wide">FAQ for the Activity Recording CAFE (ARC)</h1>
@@ -155,6 +154,12 @@
                   } else { 
                     x.className = x.className.replace(" w3-show", "");
                   }
+                }
+                function myFunction2() {
+                   var x = document.getElementById("navDemo");
+                  if (x.className.indexOf("w3-show") != -1) {
+                    x.className = x.className.replace(" w3-show", "");
+                  }  
                 }
             </script>
         </p>
