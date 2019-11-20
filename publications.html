@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>Ja Lab at The Scripps Research Institute Florida</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: "Lato", sans-serif
+        }
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.full-height {
+  height: 100%;
+}
+
+
+    </style>
+    </head>
+
+    <body>
+        <!-- Navbar -->
+        <div class="w3-top">
+            <div class="w3-bar w3-black w3-card">
+                <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+                <a href="#" class="w3-bar-item w3-button w3-padding-large">TOP</a> <a class="w3-bar-item w3-button w3-padding-large w3-hide-small" href="https://hungryfly.github.io/JaLab/#">RESEARCH</a> <a class="w3-bar-item w3-button w3-padding-large w3-hide-small" href="https://hungryfly.github.io/JaLab/#MEMBERS">MEMBERS</a> <a class="w3-bar-item w3-button w3-padding-large w3-hide-small"
+                    href="https://hungryfly.github.io/JaLab/#CONTACT">CONTACT</a> <a class="w3-bar-item w3-button w3-padding-large w3-hide-small" href="https://hungryfly.github.io/JaLab/publications.html">PUBLICATIONS</a>
+                <div class="w3-dropdown-hover w3-hide-small"><button class="w3-padding-large w3-button" title="More">MORE</button>
+                    <div class="w3-dropdown-content w3-bar-block w3-card-4"><a class="w3-bar-item w3-button" href="https://hungryfly.github.io/JaLab/FAQ.html">ARC FAQ</a> <a class="w3-bar-item w3-button" href="https://hungryfly.github.io/JaLab/#POSITIONS">POSITIONS</a> <a class="w3-bar-item w3-button" href="https://github.com/HungryFly/flyARC">flyARC GitHub</a></div>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+        <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top: 46px;"><a class="w3-bar-item w3-button w3-padding-large" href="https://hungryfly.github.io/JaLab/#" onclick="myFunction()">RESEARCH</a> <a class="w3-bar-item w3-button w3-padding-large" href="https://hungryfly.github.io/JaLab/#MEMBERS" onclick="myFunction()">MEMBERS</a> <a class="w3-bar-item w3-button w3-padding-large"
+                href="https://hungryfly.github.io/JaLab/#CONTACT" onclick="myFunction()">CONTACT</a> <a class="w3-bar-item w3-button w3-padding-large" href="https://hungryfly.github.io/JaLab/publications.html" onclick="myFunction()">PUBLICATIONS</a> <a class="w3-bar-item w3-button w3-padding-large" href="https://hungryfly.github.io/JaLab/FAQ.html" onclick="myFunction()">ARC FAQ</a>            <a class="w3-bar-item w3-button w3-padding-large" href="https://hungryfly.github.io/JaLab/#POSITIONS" onclick="myFunction()">POSITIONS</a> <a class="w3-bar-item w3-button w3-padding-large" href="https://github.com/HungryFly/flyARC" onclick="myFunction()">flyARC GitHub</a></div>
+        <!-- Page content -->
+        <div class="full-height w3-content " style="max-width: 2000px; margin-top: 46px;" onclick="myFunction2()">
+            <!-- The PUBLICATIONS Section -->
+            <div id="PUBLICATIONS" class="full-height w3-center w3-container w3-content w3-padding-64">
+                <h2 class="w3-wide w3-center">PUBLICATIONS</h2>
+                <br /><iframe style="width: 100%; height: 75%;" src="https://www.ncbi.nlm.nih.gov/pubmed/?term=ja+ww"></iframe>
+            </div>
+        </div>
+        <p>
+            <script>
+                // Used to toggle the menu on small screens when clicking on the menu button
+                function myFunction() {
+                    var x = document.getElementById("navDemo");
+                    if (x.className.indexOf("w3-show") == -1) {
+                        x.className += " w3-show";
+                    } else {
+                        x.className = x.className.replace(" w3-show", "");
+                    }
+                }
+
+                function myFunction2() {
+                    var x = document.getElementById("navDemo");
+                    if (x.className.indexOf("w3-show") != -1) {
+                        x.className = x.className.replace(" w3-show", "");
+                    }
+                }
+            </script>
+        </p>
+    </body>
+
+</html>
