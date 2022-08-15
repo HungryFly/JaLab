@@ -1,7 +1,7 @@
 [submodule "dev-landing-page"]
     path = dev-landing-page
-    url = git://github.com/flexdinesh/dev-landing-page.git
+    url = https://github.com/flexdinesh/dev-landing-page.git
 
 [submodule "flyARC"]
     path = flyARC
-    url = git://github.com/HungryFly/flyARC.git
+    url = https://github.com/HungryFly/flyARC.git
